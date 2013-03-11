@@ -37,6 +37,31 @@
 		    		<img src="img/flowchart.png">
 		    	</div>
 		    </div>
+
+		    <div id="example-1" class="step slide" data-x="+2500" data-y="-4000" data-rotate="-90">
+		    	<h4>A simple example</h4>
+
+		    	<pre>
+					use Glib;
+
+					class Sample : Glib.Object {
+						void greeting() {
+						    stdout.printf("Hello World\n");
+						}
+
+						static void main(string[] args) {
+						    var sample = new Sample();
+						    sample.greeting();
+						}
+					}
+		    	</pre>
+
+		    	<p class="center">Compile with:</p>
+
+		    	<pre>
+					valac sample.vala
+		    	</pre>
+		    </div>
 		</div>
 
 		<!-- Don't forget to actually include impress.js -->

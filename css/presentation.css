@@ -44,7 +44,12 @@ h4
 p,
 ul
 {
-	font-size: 2.0em;
+	font-size: 1.3em;
+}
+
+p
+{
+	margin: 10px 0;
 }
 
 ul
@@ -83,6 +88,12 @@ blockquote cite {
  
 blockquote cite:before {
 	content: "\2014 \2009";
+}
+
+pre
+{
+	font-family: monospace;
+	line-height: 1.5em;
 }
 
 .center
