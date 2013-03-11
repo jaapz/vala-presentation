@@ -9,7 +9,7 @@ I'll just put this up here for those people who are interested.
 Show Me!
 ========
 
-You can go to the [http://jaapz.github.com/vala-presentation](github page)
+You can go to the [github page](http://jaapz.github.com/vala-presentation)
 for this project to see the actual presentation.
 
 Manual Installation

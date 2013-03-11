@@ -174,6 +174,26 @@
 					</tr>
 				</table>
 		    </div>
+
+		    <div id="libraries" class="step slide" data-x="1000" data-y="1000" data-rotate="30">
+		    	<h4>But what about libraries?</h4>
+
+		    	<p class="center">That's what Vapi bindings are for:</p>
+
+		    	<pre>
+			[CCode (gir_namespace = "Gtk", gir_version = "2.0")]
+			namespace Gtk {
+				[CCode (cheader_filename = "gtk/gtk.h")]
+				public class Dialog : Gtk.Window, Atk.Implementor, Gtk.Buildable {
+					public Gtk.HButtonBox action_area;
+					public weak Gtk.Widget separator;
+					public Gtk.VBox vbox;
+					[CCode (has_construct_function = false, type = "GtkWidget*")]
+					public Dialog ();
+				}
+			}
+		    	</pre>
+		    </div>
 		</div>
 
 		<!-- Don't forget to actually include impress.js -->
