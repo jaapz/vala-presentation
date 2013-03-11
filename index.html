@@ -62,6 +62,39 @@
 					valac sample.vala
 		    	</pre>
 		    </div>
+
+		    <div id="example-2" class="step slide" data-x="+2000" data-y="-6000" data-rotate="-120">
+		    	<h4>A bit more advanced</h4>
+
+		    	<pre>
+					using Gtk;
+ 
+					int main (string[] args) {
+					    Gtk.init(ref args);
+					 
+					    var window = new Window();
+					    window.title = "Hello, World!";
+					    window.border_width = 10;
+					    window.window_position = WindowPosition.CENTER;
+					    window.set_default_size(350, 70);
+					    window.destroy.connect(Gtk.main_quit);
+					 
+					    var label = new Label("Hello, World!");
+					 
+					    window.add(label);
+					    window.show_all();
+					 
+					    Gtk.main();
+					    return 0;
+					}
+		    	</pre>
+
+		    	<p class="center">Compile with:</p>
+
+		    	<pre>
+					valac --pkg gtk+3.0 hellogtk.vala
+		    	</pre>
+		    </div>
 		</div>
 
 		<!-- Don't forget to actually include impress.js -->
