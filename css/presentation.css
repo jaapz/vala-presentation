@@ -96,6 +96,26 @@ pre
 	line-height: 1.5em;
 }
 
+table
+{
+	width: 500px;
+	margin-left: 215px;
+	margin-top: 20px;
+}
+
+th
+{
+	text-align: left;
+	font-weight: bold;
+}
+
+td,
+th
+{
+	border: 1px solid #BBB;
+	padding: 5px;
+}
+
 .center
 {
 	width: 100%;
