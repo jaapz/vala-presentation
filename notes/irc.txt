@@ -1,0 +1,23 @@
+irc.freenode.org - #elementary-dev - 2012-03-11
+
+09:17 < jaapz|work> So, i'm going to do a presentation about vala today at the 
+                    company where i'm doing my internship
+09:17 < jaapz|work> Anyone have some stuff i really should mention?
+09:17 < Digi59404> jaapz|work: Yeah, the fact it's the best language ever.
+09:17 < jaapz|work> Digi59404: and now something with which i can convince some 
+                    python programmers
+09:18 < Digi59404> The fact it's faster than python because it's preprocessed into 
+                   C.
+09:18 < niagr_> jaapz|work, that the gObject backend could be used to create 
+                several languages with different syntax, while still conforming to 
+                the platform's C ABI
+09:18 < niagr_> jaapz|work, think Vala and Geanie
+09:18 < jaapz|work> Genie :)
+09:18 < jaapz|work> Right
+[ ... ]
+09:20 < jaapz|work> But anyone know some bad parts of the language
+09:20 < jaapz|work> ?
+09:20 -!- m4n1sh [~manish@ubuntu/member/m4n1sh] has joined #elementary-dev
+09:20 < Digi59404> it's tied to gObject :)
+09:21 < Digi59404> you have to use GTK
+09:22 < jaapz|work> Right
