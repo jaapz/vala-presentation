@@ -14,10 +14,48 @@ irc.freenode.org - #elementary-dev - 2012-03-11
 09:18 < niagr_> jaapz|work, think Vala and Geanie
 09:18 < jaapz|work> Genie :)
 09:18 < jaapz|work> Right
+
 [ ... ]
+
 09:20 < jaapz|work> But anyone know some bad parts of the language
 09:20 < jaapz|work> ?
 09:20 -!- m4n1sh [~manish@ubuntu/member/m4n1sh] has joined #elementary-dev
 09:20 < Digi59404> it's tied to gObject :)
 09:21 < Digi59404> you have to use GTK
 09:22 < jaapz|work> Right
+
+[ ... ]
+
+09:55 < jaapz|work> Hye Munchor 
+09:55 < jaapz|work> I'm making a presentation on Vala for the company i'm doing my 
+                    internship
+09:56 < jaapz|work> Do you know some things i need to add?
+09:56 -!- indieross_ [~indieross@ip72-208-215-76.ph.ph.cox.net] has quit [Remote 
+          host closed the connection]
+09:56 <@Munchor> aw man
+09:57 <@Munchor> I can't remember the word npow
+09:57 <@Munchor> but speed comparison between languages
+09:57 <@Munchor> what's it called?
+09:57 <@Munchor> time-something?
+10:01 < niagr|away> jaapz|work, you could include that it is one of the few native 
+                    languages with the syntactic sugar of java-like languages, 
+                    i.e, it does not include the overhead of an interpreter while 
+                    still providing automatic memory management and other RAD 
+                    features
+10:07 <@Munchor> and garbace collection, right?
+10:07 <@codygarver> Munchor: you ever heard of posix-fixes?
+10:07 <@Munchor> no
+10:08 <@codygarver> ah ok
+10:08 <@Munchor> what do you call
+10:08 <@Munchor> comparison of speed between prog languages?
+10:08 <@codygarver> I still couldn't tell you the difference between bandwidth and 
+                    throughput
+10:09 <@Munchor> !google vala c java time
+10:09 <@RabbitBot> http://www.google.com/search?q=vala%20c%20java%20time
+10:09 <@Munchor> BENCHMARK
+10:09 <@Munchor> that's it
+10:10 <@Munchor> jaapz|work, put benchmarks and talk about nativity, speed and Gtk 
+                 integration for desktop app development
+10:10 <@Munchor> and the lots of bindings available
+10:10 <@Munchor> and valdoc.org
+10:10 <@Munchor> adios

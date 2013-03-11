@@ -4,18 +4,88 @@ html,
 body
 {
 	background-color: #DDD;
-	font-color: #333;
+	color: #333;
 	font-family: "Open Sans";
+}
+
+h1,
+h2,
+h3,
+h4
+{
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.5em;
 }
 
 h1
 {
-	font-size: 5.0em;
-	font-weight: bold;
+	font-size: 4.0em;
 }
 
 h2
 {
-	font-size: 4.0em;
-	font-weight: bold;
+	font-size: 3.0em;
+	color: #555;
+}
+
+h3,
+h4
+{
+	font-size: 2.5em;
+	color: #666;
+}
+
+h4
+{
+	margin-bottom: 40px;
+}
+
+p,
+ul
+{
+	font-size: 2.0em;
+}
+
+ul
+{
+	list-style-type: disc;
+	padding-left: 20px;
+}
+
+blockquote {
+	font-family: Georgia, serif;
+	font-style: italic;
+	width: 550px;
+	margin: 0 0 0 185px;
+	padding: 0.25em 40px;
+	line-height: 1.5em;
+	font-size: 1.5em;
+	position: relative;
+	color: #383838;
+}
+
+blockquote:before {
+	display: block;
+	content: "\201C";
+	position: absolute;
+	color: #7a7a7a;
+	font-size: 5.0em;
+	top: 40px;
+	left: -40px;
+}
+
+blockquote cite {
+	color: #999;
+	display: block;
+	margin-top: 5px;
+}
+ 
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+
+.slide
+{
+	width: 940px;
 }
