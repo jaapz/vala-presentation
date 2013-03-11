@@ -31,7 +31,11 @@ License
 
 References
 ==========
+
 [Vala Benchmarks](https://code.google.com/p/vala-benchmarks)
-[Wikipedia](http://en.wikipedia.org/wiki/Vala_(programming_language))
+
+[Wikipedia](http://en.wikipedia.org/wiki/Vala_\(programming_language\))
+
 [Vala FAQ](https://live.gnome.org/Vala/FAQ)
+
 [Vala Project](http://www.vala-project.org)
