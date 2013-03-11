@@ -37,6 +37,143 @@
 		    		<img src="img/flowchart.png">
 		    	</div>
 		    </div>
+
+		    <div id="example-1" class="step slide" data-x="+2500" data-y="-4000" data-rotate="-90">
+		    	<h4>A simple example</h4>
+
+		    	<pre>
+					use Glib;
+
+					class Sample : Glib.Object {
+						void greeting() {
+						    stdout.printf("Hello World\n");
+						}
+
+						static void main(string[] args) {
+						    var sample = new Sample();
+						    sample.greeting();
+						}
+					}
+		    	</pre>
+
+		    	<p class="center">Compile with:</p>
+
+		    	<pre>
+					valac sample.vala
+		    	</pre>
+		    </div>
+
+		    <div id="example-2" class="step slide" data-x="+2000" data-y="-6000" data-rotate="-120">
+		    	<h4>A bit more advanced</h4>
+
+		    	<pre>
+					using Gtk;
+ 
+					int main (string[] args) {
+					    Gtk.init(ref args);
+					 
+					    var window = new Window();
+					    window.title = "Hello, World!";
+					    window.border_width = 10;
+					    window.window_position = WindowPosition.CENTER;
+					    window.set_default_size(350, 70);
+					    window.destroy.connect(Gtk.main_quit);
+					 
+					    var label = new Label("Hello, World!");
+					 
+					    window.add(label);
+					    window.show_all();
+					 
+					    Gtk.main();
+					    return 0;
+					}
+		    	</pre>
+
+		    	<p class="center">Compile with:</p>
+
+		    	<pre>
+					valac --pkg gtk+3.0 hellogtk.vala
+		    	</pre>
+		    </div>
+
+		    <div id="benchmarks" class="step slide" data-x="0" data-y="0" data-rotate="60" data-resize="4">
+		    	<h4>But is it fast?</h4>
+
+		    	<p class="center">Yes, yes it is.</p>
+
+		    	<table>
+		    		<tr>
+		    			<th>BenchName</th>
+		    			<th>C++</th>
+		    			<th>Mono</th>
+		    			<th>plain-C</th>
+		    			<th>Vala</th>
+		    		</tr>
+		    		<tr>
+		    			<td>mandelbrot</td>
+		    			<td>14.63</td>
+		    			<td>47.41</td>
+		    			<td>12.46</td>
+		    			<td>13.06</td>
+		    		</tr>
+		    		<tr>
+		    			<td>partialSums</td>
+		    			<td>32.37</td>
+		    			<td>56.59</td>
+		    			<td>35.20</td>
+		    			<td>34.93</td>
+		    		</tr>
+		    		<tr>
+						<td >recursive</td>
+						<td >12.85</td>
+						<td >28.39</td>
+						<td >8.42</td>
+						<td >8.62</td>
+					</tr>
+					<tr>
+						<td >binaryTrees</td>
+						<td >27.41</td>
+						<td >43.34</td>
+						<td >21.84</td>
+						<td >30.90</td>
+					</tr>
+					<tr>
+						<td >sumFile</td>
+						<td >16.76</td>
+						<td >23.87</td>
+						<td >14.14</td>
+						<td >15.15</td>
+					</tr>
+					<tr>
+						<td >fannkuch</td>
+						<td >11.15</td>
+						<td >26.55</td>
+						<td >12.22</td>
+						<td >14.15</td>
+					</tr>
+					<tr>
+						<td >spectralNorm</td>
+						<td >32.82</td>
+						<td >46.46</td>
+						<td >32.90</td>
+						<td >36.30</td>
+					</tr>
+					<tr>
+						<td >nsieve</td>
+						<td >25.59</td>
+						<td >30.26</td>
+						<td >25.80</td>
+						<td >26.32</td>
+					</tr>
+					<tr>
+						<td >nBody</td>
+						<td >27.92</td>
+						<td >43.97</td>
+						<td >26.05</td>
+						<td >27.23</td>
+					</tr>
+				</table>
+		    </div>
 		</div>
 
 		<!-- Don't forget to actually include impress.js -->
