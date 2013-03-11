@@ -59,3 +59,8 @@ irc.freenode.org - #elementary-dev - 2012-03-11
 10:10 <@Munchor> and the lots of bindings available
 10:10 <@Munchor> and valdoc.org
 10:10 <@Munchor> adios
+
+[ ... ]
+
+10:17 < niagr|away> jaapz|work, oh and talk about gObject-Introspection. That's a 
+                    major advantage (form the bindability point of view)

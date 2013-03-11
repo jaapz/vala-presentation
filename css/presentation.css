@@ -85,6 +85,12 @@ blockquote cite:before {
 	content: "\2014 \2009";
 }
 
+.center
+{
+	width: 100%;
+	text-align: center;
+}
+
 .slide
 {
 	width: 940px;
