@@ -194,6 +194,41 @@
 			}
 		    	</pre>
 		    </div>
+
+		    <div id="python-ish" class="step slide" data-x="2000" data-y="2000" data-rotate="0">
+ 				<h4>But i don't like the syntax</h4>
+
+ 				<p class="center">Genie exists for people accustomed to Python.</p>
+
+				<pre>
+				[indent=4]
+				uses 
+				    Gtk
+
+				init
+				    Gtk.init (ref args)
+				    
+				    var test = new TestWindow ()
+				    test.show_all ()
+
+				    Gtk.main ();
+
+				class TestWindow : Window
+				    init
+				        title = "Test Window"
+				        default_height = 250
+				        default_width = 250
+
+				        window_position = WindowPosition.CENTER
+				        destroy += Gtk.main_quit
+
+				        var button = new Button.with_label ("Click Me")
+				        button.clicked += def (btn)
+				            title = "Hello World"
+				            btn.label = "Hello World"
+				        add (button)
+				</pre> 				
+		    </div>
 		</div>
 
 		<!-- Don't forget to actually include impress.js -->
